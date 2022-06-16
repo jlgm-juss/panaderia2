@@ -1,0 +1,42 @@
+.listnone {
+    list-style-type: none;
+}
+
+.img {
+    width: 100%;
+    filter: grayscale(75%);
+    border-radius: 10px;
+    /* box-shadow 1º x 2º y 3º blur(densidad de sombra) 4º color */
+    box-shadow: 10px 20px 15px gray;
+  }
+
+  img:hover {
+    filter: grayscale(0%);
+    transition: 400ms;
+  } 
+
+@media screen and (min-width: 350px) and (max-width: 900px) {
+    
+  .center {
+      display: flex;
+      justify-content: center;
+  }
+    
+}
+
+@media screen and (min-width: 1500px) and (max-width: 6000px) {
+    
+    .mcenter {
+        margin-right: 170px;
+    }
+      
+  }
+
+@media all and (max-width: 767px) {
+
+    .bannerpanaderia {
+        height: 250px;
+        object-fit: cover;
+    }
+
+}
